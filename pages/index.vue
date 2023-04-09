@@ -31,7 +31,10 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo quod, exercitationem enim ipsum corporis porro similique beatae vitae quisquam alias, possimus id nesciunt reiciendis expedita assumenda eum molestiae? Nesciunt.
                 </v-col>
               </v-row>
-            </v-container>
+            </v-container>   
+        </v-window-item>
+          <v-window-item :key="4" :value="4" >
+          Hello 
           </v-window-item>
         </v-window>
     </div>
@@ -42,12 +45,11 @@
     
       
     useServerSeoMeta({
-      title: 'My Amazing Site',
-      ogTitle: 'My Amazing Site',
-      description: 'This is my amazing site, let me tell you all about it.',
-      ogDescription: 'This is my amazing site, let me tell you all about it.',
-      ogImage: 'https://example.com/image.png',
-      twitterCard: 'summary_large_image',
+      title: 'Sanath Kandikanti',
+      ogTitle: 'Sanath Kandikanti',
+      description: 'Sanath Kandikanti\'s personal website.',
+      ogDescription: 'Sanath Kandikanti\'s personal website.',
+      author: 'Sanath Kandikanti'
     })
     </script>
     
@@ -95,4 +97,7 @@
     .column-container {
         font-size: 18px;
     }
+
+    
+    
     </style>
