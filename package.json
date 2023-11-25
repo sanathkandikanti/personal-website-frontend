@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "esbuild": "^0.19.7",
     "nuxt": "3.3.3",
     "sass": "^1.61.0"
   },
