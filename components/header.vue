@@ -1,40 +1,82 @@
 <template>
-    <header>
+    <header class="header">
+      <div class="header-content">
         <nav>
-            <ul>
-                <li><nuxt-link to="/">About</nuxt-link></li>
-                <li><nuxt-link to="/notes">Notes</nuxt-link></li>
-                <li><nuxt-link to="/contact">Contact</nuxt-link></li>
-            </ul>
+          <ul>
+            <li><nuxt-link to="/" exact>About</nuxt-link></li>
+            <li><nuxt-link to="/notes">Notes</nuxt-link></li>
+            <li><nuxt-link to="/contact">Contact</nuxt-link></li>
+          </ul>
         </nav>
+        <span class="header-text"><nuxt-link to="/">Sanath</nuxt-link></span>
+      </div>
     </header>
-</template>
+  </template>
+  
+  <style scoped>
+.header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+  /* Adjust max-width for smaller screens */
+  .header-content {
+    max-width: 90%; 
+  }
+}
 
   
-<style scoped>
-header {
-    padding: 10px 20px;
-}
-
-nav ul {
+  nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-}
-
-nav ul li {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
     margin-right: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav ul li a {
     text-decoration: none;
-    color: black;
-    padding: 10px;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px 15px;
     transition: background-color 0.3s ease;
-}
-
-nav ul li a:hover {
-    border-radius: 5px;
-}
-</style>
+  }
+  
+  .router-link-exact-active {
+    color: #1ad6ff;
+  }
+  
+  .header-text {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 48px;
+  }
+  
+  .header-text a {
+    color: #333333;
+    text-decoration: none;
+  }
+  </style>
+  
