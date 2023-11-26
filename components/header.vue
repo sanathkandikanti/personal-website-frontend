@@ -6,7 +6,7 @@
                     <nav>
                         <ul class="menu-items">
                             <li><nuxt-link to="/" exact>About</nuxt-link></li>
-                            <li><nuxt-link to="/notes">Notes</nuxt-link></li>
+                            <li><nuxt-link to="/note">Notes</nuxt-link></li>
                             <li><nuxt-link to="/contact">Contact</nuxt-link></li>
                         </ul>
                     </nav>

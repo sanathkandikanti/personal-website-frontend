@@ -1,6 +1,9 @@
 import vuetify from "vite-plugin-vuetify";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  content: {
+    dir: 'content'
+  },
   modules: [
     async (options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) =>
@@ -11,6 +14,7 @@ export default defineNuxtConfig({
         )
       );
     },
+    '@nuxt/content',
   ],
   css: [
     "@/assets/supreme.css",
