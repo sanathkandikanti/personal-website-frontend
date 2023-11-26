@@ -20,10 +20,9 @@
 </template>
   
 <style scoped>
-
 /* Additional class to remove padding */
 .no-padding {
-  padding: 0 !important;
+    padding: 0 !important;
 }
 
 .menu-items {
@@ -83,6 +82,11 @@ nav ul li .router-link-exact-active:hover::after {
 /* Selected link text color */
 .router-link-exact-active {
     color: #1ad6ff;
+}
+
+.header {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .header-text {
