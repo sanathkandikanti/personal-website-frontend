@@ -58,42 +58,51 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: 500;
-  padding: 10px 15px;
-  transition: color 0.3s, border-bottom 0.3s; /* Added transition for underline effect */
-  font-size: 1.25rem; /* Adjust font size */
-  position: relative; /* Create space for the underline */
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+    /* Added transition for underline effect */
+    font-size: 1.25rem;
+    /* Adjust font size */
+    position: relative;
+    /* Create space for the underline */
 }
 
 /* Underline effect */
 nav ul li a::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: -2px;
-  width: 0;
-  height: 1px;
-  background-color: #000; /* Black underline for unselected elements */
-  transition: width 0.3s ease, background-color 0.3s ease; /* Added transition for underline color */
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: #000;
+    /* Black underline for unselected elements */
+    transition: width 0.3s ease, background-color 0.3s ease;
+    /* Added transition for underline color */
 }
 
 /* Animate underline on hover */
 nav ul li a:hover::after {
-  width: 100%;
-  background-color: black; /* Change underline color on hover */
+    width: 100%;
+    background-color: black;
+    /* Change underline color on hover */
 }
 
 /* Active/Selected link without underline */
 .router-link-exact-active::after {
-  width: 0; /* Hide underline after selection */
-  background-color: transparent; /* No underline for selected link */
+    width: 0;
+    /* Hide underline after selection */
+    background-color: transparent;
+    /* No underline for selected link */
 }
 
 /* Selected link text color */
 .router-link-exact-active {
-  color: #1ad6ff; /* Change text color for selected link */
+    color: #1ad6ff;
+    /* Change text color for selected link */
 }
 
 
@@ -112,6 +121,5 @@ nav ul li a:hover::after {
 .header-text a {
     color: #333333;
     text-decoration: none;
-}
-</style>
+}</style>
   
