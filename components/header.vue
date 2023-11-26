@@ -78,7 +78,7 @@ nav ul li a::after {
     bottom: -2px;
     width: 0;
     height: 1px;
-    background-color: #000;
+    background-color: transparent;
     /* Black underline for unselected elements */
     transition: width 0.3s ease, background-color 0.3s ease;
     /* Added transition for underline color */
@@ -89,6 +89,12 @@ nav ul li a:hover::after {
     width: 100%;
     background-color: black;
     /* Change underline color on hover */
+}
+
+/* Animate underline on hover for selected link */
+nav ul li .router-link-exact-active:hover::after {
+  width: 100%;
+  background-color: #1ad6ff; /* Red underline on hover and for selected link */
 }
 
 /* Active/Selected link without underline */
@@ -103,12 +109,6 @@ nav ul li a:hover::after {
 .router-link-exact-active {
     color: #1ad6ff;
     /* Change text color for selected link */
-}
-
-
-
-.router-link-exact-active {
-    color: #1ad6ff;
 }
 
 .header-text {
