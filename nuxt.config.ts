@@ -7,5 +7,11 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/content',
   ],
-  typescript: { shim: false }
+  typescript: { shim: false },
+  
+  // Static site generation for AWS Amplify
+  ssr: true,
+  nitro: {
+    preset: 'aws-amplify'
+  }
 });
