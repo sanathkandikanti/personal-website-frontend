@@ -8,7 +8,8 @@ node_modules
 dist
 .vscode
 .DS_Store
-.kiro
+.kiro/*
+!.kiro/steering/
 .amplify-hosting/
 
 # Test coverage
