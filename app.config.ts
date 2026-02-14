@@ -10,13 +10,6 @@ export default defineAppConfig({
       logo: false
     },
     
-    // Navigation configuration
-    navigation: [
-      { title: 'About', to: '/' },
-      { title: 'Articles', to: '/articles' },
-      { title: 'Notes', to: '/notes' }
-    ],
-    
     // Footer configuration
     footer: {
       credits: {

@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 
 /**
  * Unit tests for formatDate function
- * Feature: inline-notes-component
+ * Feature: inline-meditations-component
  * Task: 3.1 Create formatDate function
  * Requirements: 3.3, 7.2, 7.4
  */
@@ -102,7 +102,7 @@ describe('formatDate function - Edge Cases', () => {
   describe('Component integration', () => {
     it('should have formatDate function in component', async () => {
       const componentContent = await import('fs').then(fs => 
-        fs.promises.readFile('components/content/InlineNotes.vue', 'utf-8')
+        fs.promises.readFile('components/content/MeditationsList.vue', 'utf-8')
       )
       
       // Verify formatDate function exists
@@ -112,7 +112,7 @@ describe('formatDate function - Edge Cases', () => {
 
     it('should handle null/undefined dates in component', async () => {
       const componentContent = await import('fs').then(fs => 
-        fs.promises.readFile('components/content/InlineNotes.vue', 'utf-8')
+        fs.promises.readFile('components/content/MeditationsList.vue', 'utf-8')
       )
       
       // Verify null/undefined handling
@@ -121,7 +121,7 @@ describe('formatDate function - Edge Cases', () => {
 
     it('should handle invalid dates in component', async () => {
       const componentContent = await import('fs').then(fs => 
-        fs.promises.readFile('components/content/InlineNotes.vue', 'utf-8')
+        fs.promises.readFile('components/content/MeditationsList.vue', 'utf-8')
       )
       
       // Verify invalid date handling
@@ -130,7 +130,7 @@ describe('formatDate function - Edge Cases', () => {
 
     it('should use en-US locale for formatting', async () => {
       const componentContent = await import('fs').then(fs => 
-        fs.promises.readFile('components/content/InlineNotes.vue', 'utf-8')
+        fs.promises.readFile('components/content/MeditationsList.vue', 'utf-8')
       )
       
       // Verify locale and format options
