@@ -2,7 +2,6 @@
 title: Sample Article
 description: This is a sample article demonstrating the Alpine theme article structure
 date: 2024-01-15
-cover: /images/sample-cover.jpg
 ---
 
 # Sample Article
