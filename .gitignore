@@ -9,6 +9,7 @@ dist
 .vscode
 .DS_Store
 .kiro
+.amplify-hosting/
 
 # Test coverage
 coverage
